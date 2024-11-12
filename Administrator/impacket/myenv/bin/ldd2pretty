@@ -1,0 +1,3 @@
+#!/home/dante/Documents/HTB_CTF/Administrator/impacket/myenv/bin/python
+from ldapdomaindump import pretty
+pretty.main()
