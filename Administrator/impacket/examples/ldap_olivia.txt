@@ -1,0 +1,502 @@
+ldapsearch -x -H ldap://10.10.11.42 -D "Olivia@administrator.htb" -w "ichliebedich" -b "dc=administrator,dc=htb" "(objectClass=user)" 
+
+# extended LDIF
+#
+# LDAPv3
+# base <dc=administrator,dc=htb> with scope subtree
+# filter: (objectClass=user)
+# requesting: ALL
+#
+
+# Administrator, Users, administrator.htb
+dn: CN=Administrator,CN=Users,DC=administrator,DC=htb
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Administrator
+description: Built-in account for administering the computer/domain
+distinguishedName: CN=Administrator,CN=Users,DC=administrator,DC=htb
+instanceType: 4
+whenCreated: 20241004194831.0Z
+whenChanged: 20241113193907.0Z
+uSNCreated: 8196
+memberOf: CN=Group Policy Creator Owners,CN=Users,DC=administrator,DC=htb
+memberOf: CN=Domain Admins,CN=Users,DC=administrator,DC=htb
+memberOf: CN=Enterprise Admins,CN=Users,DC=administrator,DC=htb
+memberOf: CN=Schema Admins,CN=Users,DC=administrator,DC=htb
+memberOf: CN=Administrators,CN=Builtin,DC=administrator,DC=htb
+uSNChanged: 131122
+name: Administrator
+objectGUID:: 52NeeKUxh0CyN3KNse2vDw==
+userAccountControl: 66048
+badPwdCount: 7
+codePage: 0
+countryCode: 0
+badPasswordTime: 133760037872401165
+lastLogoff: 0
+lastLogon: 133760003568181616
+pwdLastSet: 133740971762852810
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAUKvmQOfVRxZ8nyYP9AEAAA==
+adminCount: 1
+accountExpires: 9223372036854775807
+logonCount: 78
+sAMAccountName: Administrator
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=administrator,DC=htb
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20241012203002.0Z
+dSCorePropagationData: 20241005173134.0Z
+dSCorePropagationData: 20241005173134.0Z
+dSCorePropagationData: 20241004195329.0Z
+dSCorePropagationData: 16010714042016.0Z
+lastLogonTimestamp: 133760003477246161
+
+# Guest, Users, administrator.htb
+dn: CN=Guest,CN=Users,DC=administrator,DC=htb
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Guest
+description: Built-in account for guest access to the computer/domain
+distinguishedName: CN=Guest,CN=Users,DC=administrator,DC=htb
+instanceType: 4
+whenCreated: 20241004194831.0Z
+whenChanged: 20241004194831.0Z
+uSNCreated: 8197
+memberOf: CN=Guests,CN=Builtin,DC=administrator,DC=htb
+uSNChanged: 8197
+name: Guest
+objectGUID:: vvBN4cM25kabG1aKwXNBQw==
+userAccountControl: 66082
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 0
+primaryGroupID: 514
+objectSid:: AQUAAAAAAAUVAAAAUKvmQOfVRxZ8nyYP9QEAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Guest
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=administrator,DC=htb
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20241012203002.0Z
+dSCorePropagationData: 20241004195329.0Z
+dSCorePropagationData: 16010101000417.0Z
+
+# DC, Domain Controllers, administrator.htb
+dn: CN=DC,OU=Domain Controllers,DC=administrator,DC=htb
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+objectClass: computer
+cn: DC
+distinguishedName: CN=DC,OU=Domain Controllers,DC=administrator,DC=htb
+instanceType: 4
+whenCreated: 20241004195328.0Z
+whenChanged: 20241113193903.0Z
+uSNCreated: 12293
+uSNChanged: 131117
+name: DC
+objectGUID:: mz7dFBG9tUyjSjwA8HYMSQ==
+userAccountControl: 532480
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 133760039124275300
+localPolicyFlags: 0
+pwdLastSet: 133725452406142213
+primaryGroupID: 516
+objectSid:: AQUAAAAAAAUVAAAAUKvmQOfVRxZ8nyYP6AMAAA==
+accountExpires: 9223372036854775807
+logonCount: 131
+sAMAccountName: DC$
+sAMAccountType: 805306369
+operatingSystem: Windows Server 2022 Standard
+operatingSystemVersion: 10.0 (20348)
+serverReferenceBL: CN=DC,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Con
+ figuration,DC=administrator,DC=htb
+dNSHostName: dc.administrator.htb
+rIDSetReferences: CN=RID Set,CN=DC,OU=Domain Controllers,DC=administrator,DC=h
+ tb
+servicePrincipalName: TERMSRV/DC
+servicePrincipalName: TERMSRV/dc.administrator.htb
+servicePrincipalName: Dfsr-12F9A27C-BF97-4787-9364-D31B6C55EB04/dc.administrat
+ or.htb
+servicePrincipalName: ldap/dc.administrator.htb/ForestDnsZones.administrator.h
+ tb
+servicePrincipalName: ldap/dc.administrator.htb/DomainDnsZones.administrator.h
+ tb
+servicePrincipalName: DNS/dc.administrator.htb
+servicePrincipalName: GC/dc.administrator.htb/administrator.htb
+servicePrincipalName: RestrictedKrbHost/dc.administrator.htb
+servicePrincipalName: RestrictedKrbHost/DC
+servicePrincipalName: RPC/6e43350c-ebd4-42ac-9957-066ae357cbc8._msdcs.administ
+ rator.htb
+servicePrincipalName: HOST/DC/ADMINISTRATOR
+servicePrincipalName: HOST/dc.administrator.htb/ADMINISTRATOR
+servicePrincipalName: HOST/DC
+servicePrincipalName: HOST/dc.administrator.htb
+servicePrincipalName: HOST/dc.administrator.htb/administrator.htb
+servicePrincipalName: E3514235-4B06-11D1-AB04-00C04FC2DCD2/6e43350c-ebd4-42ac-
+ 9957-066ae357cbc8/administrator.htb
+servicePrincipalName: ldap/DC/ADMINISTRATOR
+servicePrincipalName: ldap/6e43350c-ebd4-42ac-9957-066ae357cbc8._msdcs.adminis
+ trator.htb
+servicePrincipalName: ldap/dc.administrator.htb/ADMINISTRATOR
+servicePrincipalName: ldap/DC
+servicePrincipalName: ldap/dc.administrator.htb
+servicePrincipalName: ldap/dc.administrator.htb/administrator.htb
+objectCategory: CN=Computer,CN=Schema,CN=Configuration,DC=administrator,DC=htb
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20241012203002.0Z
+dSCorePropagationData: 20241004195329.0Z
+dSCorePropagationData: 16010101000417.0Z
+lastLogonTimestamp: 133760003433657660
+msDS-SupportedEncryptionTypes: 28
+msDS-GenerationId:: HeOd0ZIN4kc=
+msDFSR-ComputerReferenceBL: CN=DC,CN=Topology,CN=Domain System Volume,CN=DFSR-
+ GlobalSettings,CN=System,DC=administrator,DC=htb
+
+# krbtgt, Users, administrator.htb
+dn: CN=krbtgt,CN=Users,DC=administrator,DC=htb
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: krbtgt
+description: Key Distribution Center Service Account
+distinguishedName: CN=krbtgt,CN=Users,DC=administrator,DC=htb
+instanceType: 4
+whenCreated: 20241004195328.0Z
+whenChanged: 20241005173134.0Z
+uSNCreated: 12324
+memberOf: CN=Denied RODC Password Replication Group,CN=Users,DC=administrator,
+ DC=htb
+uSNChanged: 28714
+showInAdvancedViewOnly: TRUE
+name: krbtgt
+objectGUID:: lf6ZktkqRE+bZtGC4u252Q==
+userAccountControl: 514
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133725452086872719
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAUKvmQOfVRxZ8nyYP9gEAAA==
+adminCount: 1
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: krbtgt
+sAMAccountType: 805306368
+servicePrincipalName: kadmin/changepw
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=administrator,DC=htb
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20241012203002.0Z
+dSCorePropagationData: 20241005173134.0Z
+dSCorePropagationData: 20241004195329.0Z
+dSCorePropagationData: 16010101181216.0Z
+msDS-SupportedEncryptionTypes: 0
+
+# Olivia Johnson, Users, administrator.htb
+dn: CN=Olivia Johnson,CN=Users,DC=administrator,DC=htb
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Olivia Johnson
+sn: Johnson
+givenName: Olivia
+distinguishedName: CN=Olivia Johnson,CN=Users,DC=administrator,DC=htb
+instanceType: 4
+whenCreated: 20241006012248.0Z
+whenChanged: 20241113195822.0Z
+displayName: Olivia Johnson
+uSNCreated: 28813
+memberOf: CN=Remote Management Users,CN=Builtin,DC=administrator,DC=htb
+uSNChanged: 131160
+name: Olivia Johnson
+objectGUID:: hY7Wn104e0uLmSVZsR6LNw==
+userAccountControl: 66080
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 133760032093650515
+lastLogoff: 0
+lastLogon: 133760040574744326
+pwdLastSet: 133726513687695744
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAUKvmQOfVRxZ8nyYPVAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: olivia
+sAMAccountType: 805306368
+userPrincipalName: olivia@administrator.htb
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=administrator,DC=htb
+dSCorePropagationData: 20241012203002.0Z
+dSCorePropagationData: 16010101000001.0Z
+lastLogonTimestamp: 133760015028650163
+msDS-SupportedEncryptionTypes: 0
+
+# Michael Williams, Users, administrator.htb
+dn: CN=Michael Williams,CN=Users,DC=administrator,DC=htb
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Michael Williams
+sn: Williams
+givenName: Michael
+distinguishedName: CN=Michael Williams,CN=Users,DC=administrator,DC=htb
+instanceType: 4
+whenCreated: 20241006013336.0Z
+whenChanged: 20241006013854.0Z
+displayName: Michael Williams
+uSNCreated: 32794
+memberOf: CN=Remote Management Users,CN=Builtin,DC=administrator,DC=htb
+uSNChanged: 32808
+name: Michael Williams
+objectGUID:: 1NH2S9wCTEON189zuBBjoQ==
+userAccountControl: 66048
+badPwdCount: 6
+codePage: 0
+countryCode: 0
+badPasswordTime: 133760041967713080
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133726520170490427
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAUKvmQOfVRxZ8nyYPVQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: michael
+sAMAccountType: 805306368
+userPrincipalName: michael@administrator.htb
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=administrator,DC=htb
+dSCorePropagationData: 20241012203002.0Z
+dSCorePropagationData: 20241006013854.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# Benjamin Brown, Users, administrator.htb
+dn: CN=Benjamin Brown,CN=Users,DC=administrator,DC=htb
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Benjamin Brown
+sn: Brown
+givenName: Benjamin
+distinguishedName: CN=Benjamin Brown,CN=Users,DC=administrator,DC=htb
+instanceType: 4
+whenCreated: 20241006013456.0Z
+whenChanged: 20241006021453.0Z
+displayName: Benjamin Brown
+uSNCreated: 32802
+memberOf: CN=Share Moderators,CN=Users,DC=administrator,DC=htb
+uSNChanged: 32846
+name: Benjamin Brown
+objectGUID:: R3c1NMXBl06LXOxpAwFgXQ==
+userAccountControl: 66048
+badPwdCount: 5
+codePage: 0
+countryCode: 0
+badPasswordTime: 133760032211935712
+lastLogoff: 0
+lastLogon: 133726544931995405
+pwdLastSet: 133726520965583741
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAUKvmQOfVRxZ8nyYPVgQAAA==
+accountExpires: 9223372036854775807
+logonCount: 1
+sAMAccountName: benjamin
+sAMAccountType: 805306368
+userPrincipalName: benjamin@administrator.htb
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=administrator,DC=htb
+dSCorePropagationData: 20241012203002.0Z
+dSCorePropagationData: 20241006015712.0Z
+dSCorePropagationData: 20241006013958.0Z
+dSCorePropagationData: 16010101000001.0Z
+lastLogonTimestamp: 133726544931995405
+
+# Emily Rodriguez, Users, administrator.htb
+dn: CN=Emily Rodriguez,CN=Users,DC=administrator,DC=htb
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Emily Rodriguez
+sn: Rodriguez
+givenName: Emily
+distinguishedName: CN=Emily Rodriguez,CN=Users,DC=administrator,DC=htb
+instanceType: 4
+whenCreated: 20241006021632.0Z
+whenChanged: 20241113194129.0Z
+displayName: Emily Rodriguez
+uSNCreated: 32848
+memberOf: CN=Remote Management Users,CN=Builtin,DC=administrator,DC=htb
+uSNChanged: 131152
+name: Emily Rodriguez
+objectGUID:: MxNl5sjPs0yiecQujt+gAA==
+userAccountControl: 66048
+badPwdCount: 2
+codePage: 0
+countryCode: 0
+badPasswordTime: 133760032211935712
+lastLogoff: 0
+lastLogon: 133760027801776225
+pwdLastSet: 133748052027757562
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAUKvmQOfVRxZ8nyYPWAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 3
+sAMAccountName: emily
+sAMAccountType: 805306368
+userPrincipalName: emily@administrator.htb
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=administrator,DC=htb
+dSCorePropagationData: 20241012203002.0Z
+dSCorePropagationData: 16010101000001.0Z
+lastLogonTimestamp: 133760004894432298
+
+# Ethan Hunt, Users, administrator.htb
+dn: CN=Ethan Hunt,CN=Users,DC=administrator,DC=htb
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Ethan Hunt
+sn: Hunt
+givenName: Ethan
+distinguishedName: CN=Ethan Hunt,CN=Users,DC=administrator,DC=htb
+instanceType: 4
+whenCreated: 20241006021701.0Z
+whenChanged: 20241113195455.0Z
+displayName: Ethan Hunt
+uSNCreated: 32855
+uSNChanged: 131159
+name: Ethan Hunt
+objectGUID:: s/hiGt2lVU2LN0ZKMoJWYg==
+userAccountControl: 66048
+badPwdCount: 5
+codePage: 0
+countryCode: 0
+badPasswordTime: 133760032211935712
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133732399341178110
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAUKvmQOfVRxZ8nyYPWQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: ethan
+sAMAccountType: 805306368
+userPrincipalName: ethan@administrator.htb
+servicePrincipalName: just/whateverUn1Que
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=administrator,DC=htb
+dSCorePropagationData: 20241012203002.0Z
+dSCorePropagationData: 20241006021809.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# Alexander Smith, Users, administrator.htb
+dn: CN=Alexander Smith,CN=Users,DC=administrator,DC=htb
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Alexander Smith
+sn: Smith
+givenName: Alexander
+distinguishedName: CN=Alexander Smith,CN=Users,DC=administrator,DC=htb
+instanceType: 4
+whenCreated: 20241031001804.0Z
+whenChanged: 20241031001804.0Z
+displayName: Alexander Smith
+uSNCreated: 94253
+uSNChanged: 94258
+name: Alexander Smith
+objectGUID:: BI3ERkK7PkWcw4ffUIv6jw==
+userAccountControl: 66050
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133748074841655077
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAUKvmQOfVRxZ8nyYPEQ4AAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: alexander
+sAMAccountType: 805306368
+userPrincipalName: alexander@administrator.htb
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=administrator,DC=htb
+dSCorePropagationData: 20241031001804.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# Emma Johnson, Users, administrator.htb
+dn: CN=Emma Johnson,CN=Users,DC=administrator,DC=htb
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Emma Johnson
+sn: Johnson
+givenName: Emma
+distinguishedName: CN=Emma Johnson,CN=Users,DC=administrator,DC=htb
+instanceType: 4
+whenCreated: 20241031001835.0Z
+whenChanged: 20241031001835.0Z
+displayName: Emma Johnson
+uSNCreated: 94260
+uSNChanged: 94266
+name: Emma Johnson
+objectGUID:: H9M/I32uf0OjnErAc68Jrw==
+userAccountControl: 66050
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 133748075152592552
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAUKvmQOfVRxZ8nyYPEg4AAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: emma
+sAMAccountType: 805306368
+userPrincipalName: emma@administrator.htb
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=administrator,DC=htb
+dSCorePropagationData: 20241031001835.0Z
+dSCorePropagationData: 16010101000000.0Z
+
+# search reference
+ref: ldap://ForestDnsZones.administrator.htb/DC=ForestDnsZones,DC=administrato
+ r,DC=htb
+
+# search reference
+ref: ldap://DomainDnsZones.administrator.htb/DC=DomainDnsZones,DC=administrato
+ r,DC=htb
+
+# search reference
+ref: ldap://administrator.htb/CN=Configuration,DC=administrator,DC=htb
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 15
+# numEntries: 11
+# numReferences: 3
