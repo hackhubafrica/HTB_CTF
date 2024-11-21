@@ -1,0 +1,1028 @@
+[{
+    "attributes": {
+        "accountExpires": [
+            "9999-12-31 23:59:59.999999+00:00"
+        ],
+        "badPasswordTime": [
+            "2024-11-13 18:58:15.281826+00:00"
+        ],
+        "badPwdCount": [
+            3
+        ],
+        "cn": [
+            "Emma Johnson"
+        ],
+        "codePage": [
+            0
+        ],
+        "countryCode": [
+            0
+        ],
+        "dSCorePropagationData": [
+            "2024-10-31 00:18:35+00:00",
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "displayName": [
+            "Emma Johnson"
+        ],
+        "distinguishedName": [
+            "CN=Emma Johnson,CN=Users,DC=administrator,DC=htb"
+        ],
+        "givenName": [
+            "Emma"
+        ],
+        "instanceType": [
+            4
+        ],
+        "lastLogoff": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "lastLogon": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "logonCount": [
+            0
+        ],
+        "name": [
+            "Emma Johnson"
+        ],
+        "objectCategory": [
+            "CN=Person,CN=Schema,CN=Configuration,DC=administrator,DC=htb"
+        ],
+        "objectClass": [
+            "top",
+            "person",
+            "organizationalPerson",
+            "user"
+        ],
+        "objectGUID": [
+            "{233fd31f-ae7d-437f-a39c-4ac073af09af}"
+        ],
+        "objectSid": [
+            "S-1-5-21-1088858960-373806567-254189436-3602"
+        ],
+        "primaryGroupID": [
+            513
+        ],
+        "pwdLastSet": [
+            "2024-10-31 00:18:35.259254+00:00"
+        ],
+        "sAMAccountName": [
+            "emma"
+        ],
+        "sAMAccountType": [
+            805306368
+        ],
+        "sn": [
+            "Johnson"
+        ],
+        "uSNChanged": [
+            94266
+        ],
+        "uSNCreated": [
+            94260
+        ],
+        "userAccountControl": [
+            66050
+        ],
+        "userPrincipalName": [
+            "emma@administrator.htb"
+        ],
+        "whenChanged": [
+            "2024-10-31 00:18:35+00:00"
+        ],
+        "whenCreated": [
+            "2024-10-31 00:18:35+00:00"
+        ]
+    },
+    "dn": "CN=Emma Johnson,CN=Users,DC=administrator,DC=htb"
+},{
+    "attributes": {
+        "accountExpires": [
+            "9999-12-31 23:59:59.999999+00:00"
+        ],
+        "badPasswordTime": [
+            "2024-11-13 18:58:14.328594+00:00"
+        ],
+        "badPwdCount": [
+            3
+        ],
+        "cn": [
+            "Alexander Smith"
+        ],
+        "codePage": [
+            0
+        ],
+        "countryCode": [
+            0
+        ],
+        "dSCorePropagationData": [
+            "2024-10-31 00:18:04+00:00",
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "displayName": [
+            "Alexander Smith"
+        ],
+        "distinguishedName": [
+            "CN=Alexander Smith,CN=Users,DC=administrator,DC=htb"
+        ],
+        "givenName": [
+            "Alexander"
+        ],
+        "instanceType": [
+            4
+        ],
+        "lastLogoff": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "lastLogon": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "logonCount": [
+            0
+        ],
+        "name": [
+            "Alexander Smith"
+        ],
+        "objectCategory": [
+            "CN=Person,CN=Schema,CN=Configuration,DC=administrator,DC=htb"
+        ],
+        "objectClass": [
+            "top",
+            "person",
+            "organizationalPerson",
+            "user"
+        ],
+        "objectGUID": [
+            "{46c48d04-bb42-453e-9cc3-87df508bfa8f}"
+        ],
+        "objectSid": [
+            "S-1-5-21-1088858960-373806567-254189436-3601"
+        ],
+        "primaryGroupID": [
+            513
+        ],
+        "pwdLastSet": [
+            "2024-10-31 00:18:04.165506+00:00"
+        ],
+        "sAMAccountName": [
+            "alexander"
+        ],
+        "sAMAccountType": [
+            805306368
+        ],
+        "sn": [
+            "Smith"
+        ],
+        "uSNChanged": [
+            94258
+        ],
+        "uSNCreated": [
+            94253
+        ],
+        "userAccountControl": [
+            66050
+        ],
+        "userPrincipalName": [
+            "alexander@administrator.htb"
+        ],
+        "whenChanged": [
+            "2024-10-31 00:18:04+00:00"
+        ],
+        "whenCreated": [
+            "2024-10-31 00:18:04+00:00"
+        ]
+    },
+    "dn": "CN=Alexander Smith,CN=Users,DC=administrator,DC=htb"
+},{
+    "attributes": {
+        "accountExpires": [
+            "9999-12-31 23:59:59.999999+00:00"
+        ],
+        "badPasswordTime": [
+            "2024-11-13 18:58:13.375420+00:00"
+        ],
+        "badPwdCount": [
+            3
+        ],
+        "cn": [
+            "Ethan Hunt"
+        ],
+        "codePage": [
+            0
+        ],
+        "countryCode": [
+            0
+        ],
+        "dSCorePropagationData": [
+            "2024-10-12 20:30:02+00:00",
+            "2024-10-06 02:18:09+00:00",
+            "1601-01-01 00:00:01+00:00"
+        ],
+        "displayName": [
+            "Ethan Hunt"
+        ],
+        "distinguishedName": [
+            "CN=Ethan Hunt,CN=Users,DC=administrator,DC=htb"
+        ],
+        "givenName": [
+            "Ethan"
+        ],
+        "instanceType": [
+            4
+        ],
+        "lastLogoff": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "lastLogon": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "logonCount": [
+            0
+        ],
+        "name": [
+            "Ethan Hunt"
+        ],
+        "objectCategory": [
+            "CN=Person,CN=Schema,CN=Configuration,DC=administrator,DC=htb"
+        ],
+        "objectClass": [
+            "top",
+            "person",
+            "organizationalPerson",
+            "user"
+        ],
+        "objectGUID": [
+            "{1a62f8b3-a5dd-4d55-8b37-464a32825662}"
+        ],
+        "objectSid": [
+            "S-1-5-21-1088858960-373806567-254189436-1113"
+        ],
+        "primaryGroupID": [
+            513
+        ],
+        "pwdLastSet": [
+            "2024-10-12 20:52:14.117811+00:00"
+        ],
+        "sAMAccountName": [
+            "ethan"
+        ],
+        "sAMAccountType": [
+            805306368
+        ],
+        "sn": [
+            "Hunt"
+        ],
+        "uSNChanged": [
+            36911
+        ],
+        "uSNCreated": [
+            32855
+        ],
+        "userAccountControl": [
+            66048
+        ],
+        "userPrincipalName": [
+            "ethan@administrator.htb"
+        ],
+        "whenChanged": [
+            "2024-10-12 20:52:14+00:00"
+        ],
+        "whenCreated": [
+            "2024-10-06 02:17:01+00:00"
+        ]
+    },
+    "dn": "CN=Ethan Hunt,CN=Users,DC=administrator,DC=htb"
+},{
+    "attributes": {
+        "accountExpires": [
+            "9999-12-31 23:59:59.999999+00:00"
+        ],
+        "badPasswordTime": [
+            "2024-11-13 18:58:12.250454+00:00"
+        ],
+        "badPwdCount": [
+            0
+        ],
+        "cn": [
+            "Emily Rodriguez"
+        ],
+        "codePage": [
+            0
+        ],
+        "countryCode": [
+            0
+        ],
+        "dSCorePropagationData": [
+            "2024-10-12 20:30:02+00:00",
+            "1601-01-01 00:00:01+00:00"
+        ],
+        "displayName": [
+            "Emily Rodriguez"
+        ],
+        "distinguishedName": [
+            "CN=Emily Rodriguez,CN=Users,DC=administrator,DC=htb"
+        ],
+        "givenName": [
+            "Emily"
+        ],
+        "instanceType": [
+            4
+        ],
+        "lastLogoff": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "lastLogon": [
+            "2024-11-13 19:27:00.984806+00:00"
+        ],
+        "lastLogonTimestamp": [
+            "2024-11-13 19:27:00.984806+00:00"
+        ],
+        "logonCount": [
+            3
+        ],
+        "memberOf": [
+            "CN=Remote Management Users,CN=Builtin,DC=administrator,DC=htb"
+        ],
+        "name": [
+            "Emily Rodriguez"
+        ],
+        "objectCategory": [
+            "CN=Person,CN=Schema,CN=Configuration,DC=administrator,DC=htb"
+        ],
+        "objectClass": [
+            "top",
+            "person",
+            "organizationalPerson",
+            "user"
+        ],
+        "objectGUID": [
+            "{e6651333-cfc8-4cb3-a279-c42e8edfa000}"
+        ],
+        "objectSid": [
+            "S-1-5-21-1088858960-373806567-254189436-1112"
+        ],
+        "primaryGroupID": [
+            513
+        ],
+        "pwdLastSet": [
+            "2024-10-30 23:40:02.775757+00:00"
+        ],
+        "sAMAccountName": [
+            "emily"
+        ],
+        "sAMAccountType": [
+            805306368
+        ],
+        "sn": [
+            "Rodriguez"
+        ],
+        "uSNChanged": [
+            131213
+        ],
+        "uSNCreated": [
+            32848
+        ],
+        "userAccountControl": [
+            66048
+        ],
+        "userPrincipalName": [
+            "emily@administrator.htb"
+        ],
+        "whenChanged": [
+            "2024-11-13 19:27:00+00:00"
+        ],
+        "whenCreated": [
+            "2024-10-06 02:16:32+00:00"
+        ]
+    },
+    "dn": "CN=Emily Rodriguez,CN=Users,DC=administrator,DC=htb"
+},{
+    "attributes": {
+        "accountExpires": [
+            "9999-12-31 23:59:59.999999+00:00"
+        ],
+        "badPasswordTime": [
+            "2024-11-13 18:58:11.297308+00:00"
+        ],
+        "badPwdCount": [
+            3
+        ],
+        "cn": [
+            "Benjamin Brown"
+        ],
+        "codePage": [
+            0
+        ],
+        "countryCode": [
+            0
+        ],
+        "dSCorePropagationData": [
+            "2024-10-12 20:30:02+00:00",
+            "2024-10-06 01:57:12+00:00",
+            "2024-10-06 01:39:58+00:00",
+            "1601-01-01 00:00:01+00:00"
+        ],
+        "displayName": [
+            "Benjamin Brown"
+        ],
+        "distinguishedName": [
+            "CN=Benjamin Brown,CN=Users,DC=administrator,DC=htb"
+        ],
+        "givenName": [
+            "Benjamin"
+        ],
+        "instanceType": [
+            4
+        ],
+        "lastLogoff": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "lastLogon": [
+            "2024-10-06 02:14:53.199541+00:00"
+        ],
+        "lastLogonTimestamp": [
+            "2024-10-06 02:14:53.199541+00:00"
+        ],
+        "logonCount": [
+            1
+        ],
+        "memberOf": [
+            "CN=Share Moderators,CN=Users,DC=administrator,DC=htb"
+        ],
+        "name": [
+            "Benjamin Brown"
+        ],
+        "objectCategory": [
+            "CN=Person,CN=Schema,CN=Configuration,DC=administrator,DC=htb"
+        ],
+        "objectClass": [
+            "top",
+            "person",
+            "organizationalPerson",
+            "user"
+        ],
+        "objectGUID": [
+            "{34357747-c1c5-4e97-8b5c-ec690301605d}"
+        ],
+        "objectSid": [
+            "S-1-5-21-1088858960-373806567-254189436-1110"
+        ],
+        "primaryGroupID": [
+            513
+        ],
+        "pwdLastSet": [
+            "2024-10-06 01:34:56.558374+00:00"
+        ],
+        "sAMAccountName": [
+            "benjamin"
+        ],
+        "sAMAccountType": [
+            805306368
+        ],
+        "sn": [
+            "Brown"
+        ],
+        "uSNChanged": [
+            32846
+        ],
+        "uSNCreated": [
+            32802
+        ],
+        "userAccountControl": [
+            66048
+        ],
+        "userPrincipalName": [
+            "benjamin@administrator.htb"
+        ],
+        "whenChanged": [
+            "2024-10-06 02:14:53+00:00"
+        ],
+        "whenCreated": [
+            "2024-10-06 01:34:56+00:00"
+        ]
+    },
+    "dn": "CN=Benjamin Brown,CN=Users,DC=administrator,DC=htb"
+},{
+    "attributes": {
+        "accountExpires": [
+            "9999-12-31 23:59:59.999999+00:00"
+        ],
+        "badPasswordTime": [
+            "2024-11-13 18:58:10.344206+00:00"
+        ],
+        "badPwdCount": [
+            3
+        ],
+        "cn": [
+            "Michael Williams"
+        ],
+        "codePage": [
+            0
+        ],
+        "countryCode": [
+            0
+        ],
+        "dSCorePropagationData": [
+            "2024-10-12 20:30:02+00:00",
+            "2024-10-06 01:38:54+00:00",
+            "1601-01-01 00:00:01+00:00"
+        ],
+        "displayName": [
+            "Michael Williams"
+        ],
+        "distinguishedName": [
+            "CN=Michael Williams,CN=Users,DC=administrator,DC=htb"
+        ],
+        "givenName": [
+            "Michael"
+        ],
+        "instanceType": [
+            4
+        ],
+        "lastLogoff": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "lastLogon": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "logonCount": [
+            0
+        ],
+        "memberOf": [
+            "CN=Remote Management Users,CN=Builtin,DC=administrator,DC=htb"
+        ],
+        "name": [
+            "Michael Williams"
+        ],
+        "objectCategory": [
+            "CN=Person,CN=Schema,CN=Configuration,DC=administrator,DC=htb"
+        ],
+        "objectClass": [
+            "top",
+            "person",
+            "organizationalPerson",
+            "user"
+        ],
+        "objectGUID": [
+            "{4bf6d1d4-02dc-434c-8dd7-cf73b81063a1}"
+        ],
+        "objectSid": [
+            "S-1-5-21-1088858960-373806567-254189436-1109"
+        ],
+        "primaryGroupID": [
+            513
+        ],
+        "pwdLastSet": [
+            "2024-10-06 01:33:37.049044+00:00"
+        ],
+        "sAMAccountName": [
+            "michael"
+        ],
+        "sAMAccountType": [
+            805306368
+        ],
+        "sn": [
+            "Williams"
+        ],
+        "uSNChanged": [
+            32808
+        ],
+        "uSNCreated": [
+            32794
+        ],
+        "userAccountControl": [
+            66048
+        ],
+        "userPrincipalName": [
+            "michael@administrator.htb"
+        ],
+        "whenChanged": [
+            "2024-10-06 01:38:54+00:00"
+        ],
+        "whenCreated": [
+            "2024-10-06 01:33:36+00:00"
+        ]
+    },
+    "dn": "CN=Michael Williams,CN=Users,DC=administrator,DC=htb"
+},{
+    "attributes": {
+        "accountExpires": [
+            "9999-12-31 23:59:59.999999+00:00"
+        ],
+        "badPasswordTime": [
+            "2024-11-13 18:58:09.375479+00:00"
+        ],
+        "badPwdCount": [
+            0
+        ],
+        "cn": [
+            "Olivia Johnson"
+        ],
+        "codePage": [
+            0
+        ],
+        "countryCode": [
+            0
+        ],
+        "dSCorePropagationData": [
+            "2024-10-12 20:30:02+00:00",
+            "1601-01-01 00:00:01+00:00"
+        ],
+        "displayName": [
+            "Olivia Johnson"
+        ],
+        "distinguishedName": [
+            "CN=Olivia Johnson,CN=Users,DC=administrator,DC=htb"
+        ],
+        "givenName": [
+            "Olivia"
+        ],
+        "instanceType": [
+            4
+        ],
+        "lastLogoff": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "lastLogon": [
+            "2024-11-13 18:58:31.781696+00:00"
+        ],
+        "lastLogonTimestamp": [
+            "2024-11-13 17:51:31.547297+00:00"
+        ],
+        "logonCount": [
+            1
+        ],
+        "memberOf": [
+            "CN=Remote Management Users,CN=Builtin,DC=administrator,DC=htb"
+        ],
+        "msDS-SupportedEncryptionTypes": [
+            0
+        ],
+        "name": [
+            "Olivia Johnson"
+        ],
+        "objectCategory": [
+            "CN=Person,CN=Schema,CN=Configuration,DC=administrator,DC=htb"
+        ],
+        "objectClass": [
+            "top",
+            "person",
+            "organizationalPerson",
+            "user"
+        ],
+        "objectGUID": [
+            "{9fd68e85-385d-4b7b-8b99-2559b11e8b37}"
+        ],
+        "objectSid": [
+            "S-1-5-21-1088858960-373806567-254189436-1108"
+        ],
+        "primaryGroupID": [
+            513
+        ],
+        "pwdLastSet": [
+            "2024-10-06 01:22:48.769575+00:00"
+        ],
+        "sAMAccountName": [
+            "olivia"
+        ],
+        "sAMAccountType": [
+            805306368
+        ],
+        "sn": [
+            "Johnson"
+        ],
+        "uSNChanged": [
+            131118
+        ],
+        "uSNCreated": [
+            28813
+        ],
+        "userAccountControl": [
+            66080
+        ],
+        "userPrincipalName": [
+            "olivia@administrator.htb"
+        ],
+        "whenChanged": [
+            "2024-11-13 17:51:31+00:00"
+        ],
+        "whenCreated": [
+            "2024-10-06 01:22:48+00:00"
+        ]
+    },
+    "dn": "CN=Olivia Johnson,CN=Users,DC=administrator,DC=htb"
+},{
+    "attributes": {
+        "accountExpires": [
+            "9999-12-31 23:59:59.999999+00:00"
+        ],
+        "adminCount": [
+            1
+        ],
+        "badPasswordTime": [
+            "2024-11-13 18:58:06.812981+00:00"
+        ],
+        "badPwdCount": [
+            8
+        ],
+        "cn": [
+            "krbtgt"
+        ],
+        "codePage": [
+            0
+        ],
+        "countryCode": [
+            0
+        ],
+        "dSCorePropagationData": [
+            "2024-10-12 20:30:02+00:00",
+            "2024-10-05 17:31:34+00:00",
+            "2024-10-04 19:53:29+00:00",
+            "1601-01-01 18:12:16+00:00"
+        ],
+        "description": [
+            "Key Distribution Center Service Account"
+        ],
+        "distinguishedName": [
+            "CN=krbtgt,CN=Users,DC=administrator,DC=htb"
+        ],
+        "instanceType": [
+            4
+        ],
+        "isCriticalSystemObject": [
+            true
+        ],
+        "lastLogoff": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "lastLogon": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "logonCount": [
+            0
+        ],
+        "memberOf": [
+            "CN=Denied RODC Password Replication Group,CN=Users,DC=administrator,DC=htb"
+        ],
+        "msDS-SupportedEncryptionTypes": [
+            0
+        ],
+        "name": [
+            "krbtgt"
+        ],
+        "objectCategory": [
+            "CN=Person,CN=Schema,CN=Configuration,DC=administrator,DC=htb"
+        ],
+        "objectClass": [
+            "top",
+            "person",
+            "organizationalPerson",
+            "user"
+        ],
+        "objectGUID": [
+            "{9299fe95-2ad9-4f44-9b66-d182e2edb9d9}"
+        ],
+        "objectSid": [
+            "S-1-5-21-1088858960-373806567-254189436-502"
+        ],
+        "primaryGroupID": [
+            513
+        ],
+        "pwdLastSet": [
+            "2024-10-04 19:53:28.687271+00:00"
+        ],
+        "sAMAccountName": [
+            "krbtgt"
+        ],
+        "sAMAccountType": [
+            805306368
+        ],
+        "servicePrincipalName": [
+            "kadmin/changepw"
+        ],
+        "showInAdvancedViewOnly": [
+            true
+        ],
+        "uSNChanged": [
+            28714
+        ],
+        "uSNCreated": [
+            12324
+        ],
+        "userAccountControl": [
+            514
+        ],
+        "whenChanged": [
+            "2024-10-05 17:31:34+00:00"
+        ],
+        "whenCreated": [
+            "2024-10-04 19:53:28+00:00"
+        ]
+    },
+    "dn": "CN=krbtgt,CN=Users,DC=administrator,DC=htb"
+},{
+    "attributes": {
+        "accountExpires": [
+            "9999-12-31 23:59:59.999999+00:00"
+        ],
+        "badPasswordTime": [
+            "2024-11-13 18:56:03.641045+00:00"
+        ],
+        "badPwdCount": [
+            6
+        ],
+        "cn": [
+            "Guest"
+        ],
+        "codePage": [
+            0
+        ],
+        "countryCode": [
+            0
+        ],
+        "dSCorePropagationData": [
+            "2024-10-12 20:30:02+00:00",
+            "2024-10-04 19:53:29+00:00",
+            "1601-01-01 00:04:17+00:00"
+        ],
+        "description": [
+            "Built-in account for guest access to the computer/domain"
+        ],
+        "distinguishedName": [
+            "CN=Guest,CN=Users,DC=administrator,DC=htb"
+        ],
+        "instanceType": [
+            4
+        ],
+        "isCriticalSystemObject": [
+            true
+        ],
+        "lastLogoff": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "lastLogon": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "logonCount": [
+            0
+        ],
+        "memberOf": [
+            "CN=Guests,CN=Builtin,DC=administrator,DC=htb"
+        ],
+        "name": [
+            "Guest"
+        ],
+        "objectCategory": [
+            "CN=Person,CN=Schema,CN=Configuration,DC=administrator,DC=htb"
+        ],
+        "objectClass": [
+            "top",
+            "person",
+            "organizationalPerson",
+            "user"
+        ],
+        "objectGUID": [
+            "{e14df0be-36c3-46e6-9b1b-568ac1734143}"
+        ],
+        "objectSid": [
+            "S-1-5-21-1088858960-373806567-254189436-501"
+        ],
+        "primaryGroupID": [
+            514
+        ],
+        "pwdLastSet": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "sAMAccountName": [
+            "Guest"
+        ],
+        "sAMAccountType": [
+            805306368
+        ],
+        "uSNChanged": [
+            8197
+        ],
+        "uSNCreated": [
+            8197
+        ],
+        "userAccountControl": [
+            66082
+        ],
+        "whenChanged": [
+            "2024-10-04 19:48:31+00:00"
+        ],
+        "whenCreated": [
+            "2024-10-04 19:48:31+00:00"
+        ]
+    },
+    "dn": "CN=Guest,CN=Users,DC=administrator,DC=htb"
+},{
+    "attributes": {
+        "accountExpires": [
+            "9999-12-31 23:59:59.999999+00:00"
+        ],
+        "adminCount": [
+            1
+        ],
+        "badPasswordTime": [
+            "2024-11-13 18:58:04.406788+00:00"
+        ],
+        "badPwdCount": [
+            8
+        ],
+        "cn": [
+            "Administrator"
+        ],
+        "codePage": [
+            0
+        ],
+        "countryCode": [
+            0
+        ],
+        "dSCorePropagationData": [
+            "2024-10-12 20:30:02+00:00",
+            "2024-10-05 17:31:34+00:00",
+            "2024-10-05 17:31:34+00:00",
+            "2024-10-04 19:53:29+00:00",
+            "1601-07-14 04:20:16+00:00"
+        ],
+        "description": [
+            "Built-in account for administering the computer/domain"
+        ],
+        "distinguishedName": [
+            "CN=Administrator,CN=Users,DC=administrator,DC=htb"
+        ],
+        "instanceType": [
+            4
+        ],
+        "isCriticalSystemObject": [
+            true
+        ],
+        "lastLogoff": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "lastLogon": [
+            "2024-11-13 17:51:42.562937+00:00"
+        ],
+        "lastLogonTimestamp": [
+            "2024-11-13 17:51:34.078604+00:00"
+        ],
+        "logonCount": [
+            78
+        ],
+        "memberOf": [
+            "CN=Group Policy Creator Owners,CN=Users,DC=administrator,DC=htb",
+            "CN=Domain Admins,CN=Users,DC=administrator,DC=htb",
+            "CN=Enterprise Admins,CN=Users,DC=administrator,DC=htb",
+            "CN=Schema Admins,CN=Users,DC=administrator,DC=htb",
+            "CN=Administrators,CN=Builtin,DC=administrator,DC=htb"
+        ],
+        "name": [
+            "Administrator"
+        ],
+        "objectCategory": [
+            "CN=Person,CN=Schema,CN=Configuration,DC=administrator,DC=htb"
+        ],
+        "objectClass": [
+            "top",
+            "person",
+            "organizationalPerson",
+            "user"
+        ],
+        "objectGUID": [
+            "{785e63e7-31a5-4087-b237-728db1edaf0f}"
+        ],
+        "objectSid": [
+            "S-1-5-21-1088858960-373806567-254189436-500"
+        ],
+        "primaryGroupID": [
+            513
+        ],
+        "pwdLastSet": [
+            "2024-10-22 18:59:36.285282+00:00"
+        ],
+        "sAMAccountName": [
+            "Administrator"
+        ],
+        "sAMAccountType": [
+            805306368
+        ],
+        "uSNChanged": [
+            131123
+        ],
+        "uSNCreated": [
+            8196
+        ],
+        "userAccountControl": [
+            66048
+        ],
+        "whenChanged": [
+            "2024-11-13 17:51:34+00:00"
+        ],
+        "whenCreated": [
+            "2024-10-04 19:48:31+00:00"
+        ]
+    },
+    "dn": "CN=Administrator,CN=Users,DC=administrator,DC=htb"
+}]
