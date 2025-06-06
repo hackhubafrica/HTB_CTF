@@ -1,0 +1,149 @@
+[{
+    "attributes": {
+        "accountExpires": [
+            "9999-12-31 23:59:59.999999+00:00"
+        ],
+        "badPasswordTime": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "badPwdCount": [
+            0
+        ],
+        "cn": [
+            "DC"
+        ],
+        "codePage": [
+            0
+        ],
+        "countryCode": [
+            0
+        ],
+        "dNSHostName": [
+            "dc.administrator.htb"
+        ],
+        "dSCorePropagationData": [
+            "2024-10-12 20:30:02+00:00",
+            "2024-10-04 19:53:29+00:00",
+            "1601-01-01 00:04:17+00:00"
+        ],
+        "distinguishedName": [
+            "CN=DC,OU=Domain Controllers,DC=administrator,DC=htb"
+        ],
+        "instanceType": [
+            4
+        ],
+        "isCriticalSystemObject": [
+            true
+        ],
+        "lastLogoff": [
+            "1601-01-01 00:00:00+00:00"
+        ],
+        "lastLogon": [
+            "2024-11-13 18:50:59.844187+00:00"
+        ],
+        "lastLogonTimestamp": [
+            "2024-11-13 18:50:59.844187+00:00"
+        ],
+        "localPolicyFlags": [
+            0
+        ],
+        "logonCount": [
+            131
+        ],
+        "msDFSR-ComputerReferenceBL": [
+            "CN=DC,CN=Topology,CN=Domain System Volume,CN=DFSR-GlobalSettings,CN=System,DC=administrator,DC=htb"
+        ],
+        "msDS-GenerationId": [
+            {
+                "encoded": "tFe42BrP7tg=",
+                "encoding": "base64"
+            }
+        ],
+        "msDS-SupportedEncryptionTypes": [
+            28
+        ],
+        "name": [
+            "DC"
+        ],
+        "objectCategory": [
+            "CN=Computer,CN=Schema,CN=Configuration,DC=administrator,DC=htb"
+        ],
+        "objectClass": [
+            "top",
+            "person",
+            "organizationalPerson",
+            "user",
+            "computer"
+        ],
+        "objectGUID": [
+            "{14dd3e9b-bd11-4cb5-a34a-3c00f0760c49}"
+        ],
+        "objectSid": [
+            "S-1-5-21-1088858960-373806567-254189436-1000"
+        ],
+        "operatingSystem": [
+            "Windows Server 2022 Standard"
+        ],
+        "operatingSystemVersion": [
+            "10.0 (20348)"
+        ],
+        "primaryGroupID": [
+            516
+        ],
+        "pwdLastSet": [
+            "2024-10-04 19:54:00.614222+00:00"
+        ],
+        "rIDSetReferences": [
+            "CN=RID Set,CN=DC,OU=Domain Controllers,DC=administrator,DC=htb"
+        ],
+        "sAMAccountName": [
+            "DC$"
+        ],
+        "sAMAccountType": [
+            805306369
+        ],
+        "serverReferenceBL": [
+            "CN=DC,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Configuration,DC=administrator,DC=htb"
+        ],
+        "servicePrincipalName": [
+            "TERMSRV/DC",
+            "TERMSRV/dc.administrator.htb",
+            "Dfsr-12F9A27C-BF97-4787-9364-D31B6C55EB04/dc.administrator.htb",
+            "ldap/dc.administrator.htb/ForestDnsZones.administrator.htb",
+            "ldap/dc.administrator.htb/DomainDnsZones.administrator.htb",
+            "DNS/dc.administrator.htb",
+            "GC/dc.administrator.htb/administrator.htb",
+            "RestrictedKrbHost/dc.administrator.htb",
+            "RestrictedKrbHost/DC",
+            "RPC/6e43350c-ebd4-42ac-9957-066ae357cbc8._msdcs.administrator.htb",
+            "HOST/DC/ADMINISTRATOR",
+            "HOST/dc.administrator.htb/ADMINISTRATOR",
+            "HOST/DC",
+            "HOST/dc.administrator.htb",
+            "HOST/dc.administrator.htb/administrator.htb",
+            "E3514235-4B06-11D1-AB04-00C04FC2DCD2/6e43350c-ebd4-42ac-9957-066ae357cbc8/administrator.htb",
+            "ldap/DC/ADMINISTRATOR",
+            "ldap/6e43350c-ebd4-42ac-9957-066ae357cbc8._msdcs.administrator.htb",
+            "ldap/dc.administrator.htb/ADMINISTRATOR",
+            "ldap/DC",
+            "ldap/dc.administrator.htb",
+            "ldap/dc.administrator.htb/administrator.htb"
+        ],
+        "uSNChanged": [
+            131185
+        ],
+        "uSNCreated": [
+            12293
+        ],
+        "userAccountControl": [
+            532480
+        ],
+        "whenChanged": [
+            "2024-11-13 18:50:59+00:00"
+        ],
+        "whenCreated": [
+            "2024-10-04 19:53:28+00:00"
+        ]
+    },
+    "dn": "CN=DC,OU=Domain Controllers,DC=administrator,DC=htb"
+}]

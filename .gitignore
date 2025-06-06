@@ -1,0 +1,16 @@
+# Ignore all directories with "env" in the name
+**/*env*/
+**/env*/
+**/.env*/
+**/venv*/
+
+# Ignore lib and lib64 directories
+**/lib*/
+**/lib64/
+
+# Ignore Python's site-packages
+**/site-packages/
+
+# Optional: Ignore compiled Python files and __pycache__
+__pycache__/
+*.py[cod]
